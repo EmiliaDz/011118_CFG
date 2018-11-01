@@ -1,0 +1,22 @@
+p{
+background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+#special {
+    background-color: blue;
+}
+
+.big {
+    background-color: black;
+    width: 100%;
+    height:1000px;
+}
+
+body {
+    background-image:url(images/cats.jpg);
+    background-size: cover;
+}
