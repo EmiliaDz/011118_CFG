@@ -33,6 +33,7 @@ p {
     background-color: whiteSmoke;
     position: fixed;
     width: 100%;
+    z-index: 99;
     top: 0;
     left: 0;
 }
