@@ -6,22 +6,28 @@
     <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 </style>
+    <!--script links for pop up boxes-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <SCRIPT LANGUAGE="JavaScript" SRC="script.js"></SCRIPT>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--end script for popup boxes-->
   </head>
 <html>
   <body>
-    <div id="toolbar"> 
+    <div id="toolbar">
       <ul>
         <li><a href="#start">start</a></li>
         <li><a href="#people">people</a></li>
         <li><a href="#the mission">the mission</a></li>
         <li><a href="#spacecraft">spacecraft</a></li>
         <li><a href="#jupiter">jupiter</a></li>
-        <li><a href="jupiter/jupiter.html" target="_blank">jupiter gallery</a></li>
+        <li><a href="gallery/gallery.html" target="_blank">jupiter gallery</a></li>
       </ul>
     </div>
       <section id="start">
         <h1>Juno is the best - scroll and click for magic!</h1>
-          <p> 
+          <p>
             This is where we gonna have a lot of cool facts about Juno and how the missiion started. It will be the best
           </p>
       </section>
@@ -31,7 +37,14 @@
               <img class="img-circle" src="images/astronaut1.png" width="300" height="300">
               <h2>SCOTT BOLTON</h2>
               <p>Principal Investigator (PI), responsible for overall success of NASA mission and leader of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <p><a class="btn btn-default trigger_popup_fricc" href="#" role="button">Other Experience &raquo;</a></p>
+              <div class="hover_bkgr_fricc">
+                  <span class="helper"></span>
+                  <div>
+                      <div class="popupCloseButton">X</div>
+                      <p>Dr. Scott Bolton has 24 years experience at Jet Propulsion Laboratory (JPL), spanning a wide spectrum of management, engineering and scientific positions for planetary missions including Cassini, Galileo, DS-1, Voyager, Magellan, Quasat, Solar Probe, and CRAF. His extensive experience managing multiple science investigations on both Cassini and Galileo provides an excellent background and skill set for his role as the Juno PI.<br>His experience at JPL spans mission design, instrument design and delivery, mission development, science planning, and science operations.</p>
+                  </div>
+              </div>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut2.png" width="300" height="300">
@@ -47,21 +60,21 @@
             </div><!-- /.col-lg-4 -->
           </div>
           </section>
-      
+
           <hr class="featurette-divider"/>
-      
+
       <div class="junotraveling">
                 <img src="images/juno.png" width="900">
-              </div>      
-         
+              </div>
+
           <hr class="featurette-divider"/>
         <section id="the mission">
           <div class="row featurette">
             <div class="col-md-7">
               <h2 class="featurette-heading">Juno: The Mission  <span class="text-muted">  Some useful text here</span></h2>
                 <p class="lead">As the largest planet orbiting the sun, Jupiter has had a profound influence on the solar system. But its origin remains a profound mystery. To learn how Jupiter formed and how it has evolved, Juno will study the gas giant’s gravitational andmagnetic fields, and explore the swirling clouds that form Jupiter’s colorful, trademark atmosphere. The spacecraft will also reveal what Jupiter is made of – and how much of it is water. <br /><br />Jupiter was likely the first of the planets to form because it contains a lot of the same light gases that the sun is made of – hydrogen and helium. After the first few million years in the star’s life, it generated a wind that blew away most of the light gases that remained from the original nebula. For Jupiter to be primarily composed of hydrogen and helium, it must have formed while there was still a lot of those light gases around – when the solar system was young.</p>
-            </div>           
-            
+            </div>
+
             </div>
         </section>
 
@@ -92,6 +105,20 @@
           </div>
         </section>
 
+        <!--script for pop up box-->
+        <script>
+        $(window).load(function () {
+         $(".trigger_popup_fricc").click(function(){
+            $('.hover_bkgr_fricc').show();
+         });
+         $('.hover_bkgr_fricc').click(function(){
+             $('.hover_bkgr_fricc').hide();
+         });
+         $('.popupCloseButton').click(function(){
+             $('.hover_bkgr_fricc').hide();
+         });
+       });
+       </script>
 
   </body>
   <footer>
