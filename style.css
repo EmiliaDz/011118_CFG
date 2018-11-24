@@ -53,6 +53,13 @@ p {
     filter: alpha(opacity=100); 
 
 }
+.junotravelling {
+    text-align: center;
+    position: fixed;
+    z-index: 89;
+    top: 40%;
+
+}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
