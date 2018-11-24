@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     display: inline-block;
     padding-bottom: 40px;
-    color: #5a5a5a;
+    color: white;
     text-align: center;
     margin: 8% 8% 10%;
     max-width: 100% ;
@@ -16,6 +16,7 @@ h1 {
 p {
     text-align: center;
 }
+
 #toolbar {
   text-align: center;
   background-color: whiteSmoke;
@@ -24,8 +25,8 @@ p {
   z-index: 99;
   top: 0;
   left: 0;
+  opacity: 0.
 }
-
 #toolbar ul {
     list-style: none;
     margin: 0;
@@ -37,12 +38,18 @@ p {
     display: inline-block;
     padding: 10px;
 }
+
 #toolbar li a {
     text-decoration: none;
+    font-size: 18px;
     color: black;
+
 }
+
 #toolbar li a:hover {
     color: white;
+    transform: perspective(2,2);
+
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -58,30 +65,8 @@ p {
   margin-left: 10px;
 }
 
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.featurette-heading {
-  font-size: 50px;
-}
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
-}
-
-.lead {
-  color: grey;
 }
