@@ -1,6 +1,6 @@
 body {
     text-decoration: none;
-    background: linear-gradient(lightskyblue, midnightblue, black);
+    background: linear-gradient(lightskyblue, slateblue, midnightblue, black);
     background-repeat: no-repeat;
     display: inline-block;
     padding-bottom: 40px;
@@ -20,12 +20,12 @@ p {
 #toolbar {
   text-align: center;
   background-color: whiteSmoke;
+  opacity: 0.3;
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0;
   left: 0;
-  opacity: 0.
 }
 #toolbar ul {
     list-style: none;
@@ -43,12 +43,14 @@ p {
     text-decoration: none;
     font-size: 18px;
     color: black;
+    opacity: 1.0;
 
 }
 
 #toolbar li a:hover {
     color: white;
-    transform: perspective(2,2);
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
 
 }
 
