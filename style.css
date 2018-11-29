@@ -10,6 +10,7 @@ body {
     margin: 8% 8% 10%;
     max-width: 100% ;
 }
+
 h1 {
     margin-top: 80px;
     text-align: center;
@@ -20,7 +21,8 @@ p {
 
 #toolbar {
   text-align: center;
-  opacity: 0.3;
+  background-color: #1d0c08;
+  opacity: 0.6;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -48,15 +50,13 @@ h2 {
 #toolbar li a {
     text-decoration: none;
     font-size: 18px;
-    color: black;
-    opacity: 1.00.8;
-
+    color: white;
 }
 
 #toolbar li a:hover {
     color: white;
     opacity: 1.0;
-    filter: alpha(opacity=100); 
+
 
 }
 .junotravelling {
@@ -74,4 +74,5 @@ h2 {
 
 .planetImg {
     max-width: 100%;
+    text-align: center;
 }
