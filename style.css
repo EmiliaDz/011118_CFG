@@ -1,10 +1,6 @@
 body {
     text-decoration: none;
-<<<<<<< HEAD
     background-image:url(images/background.png);
-=======
-    background: linear-gradient(lightskyblue, slateblue, midnightblue, black);
->>>>>>> parent of 1d6176a... Merge branch 'master' of https://github.com/EmiliaDz/011118_CFG
     background-repeat: no-repeat;
     display: inline-block;
     padding-bottom: 40px;
@@ -31,15 +27,12 @@ p {
   top: 0;
   left: 0;
 }
-<<<<<<< HEAD
-=======
+
 h2 {
  font-family: 'Roboto', sans-serif;
     color: white;
 }
 
-=======
->>>>>>> parent of 1d6176a... Merge branch 'master' of https://github.com/EmiliaDz/011118_CFG
 #toolbar ul {
     list-style: none;
     margin: 0;
