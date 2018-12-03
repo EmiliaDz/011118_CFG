@@ -71,16 +71,6 @@ h2 {
   font-family: "Avenir Next", "Avenir", sans-serif;
 } */
 
-a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #A62455;
-  text-decoration: none;
-}
 
 #menuToggle {
   display: block;
@@ -115,8 +105,8 @@ a:hover {
   width: 38px;
   height: 5.5px;
   margin: 5px;
-  position: relative;
   background: white;
+  position: relative;
   border-radius: 3px;
   z-index: 9;
   
@@ -141,11 +131,10 @@ a:hover {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -189,18 +178,29 @@ a:hover {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 3px 0;
-  font-size: 22px;
-}
+#menu li {
+    padding: 3px 0;
+    font-size: 22px;
+    color: white;
 
+}
 /*
  * And let's slide it in from the left
  */
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 1.0;
+    transition: color 0.3s ease;
+}
+  
+a:hover {
+    color: #A62455;
+    text-decoration: none;
 }
 
 .junotravelling {
