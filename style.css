@@ -90,22 +90,20 @@ a:hover {
   width: 20%;
   z-index: 9;
   align-content: left;
-  -webkit-user-select: none;
   user-select: none;
 }
 
 #menuToggle input {
-  display: block;
-  width: 20px;
-  height: 32px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 10; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
+    display: block;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: -6px;
+    left: -3px;
+    right: 3px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
 }
 
 /*
