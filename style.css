@@ -8,8 +8,8 @@ body {
     padding-bottom: 40px;
     color: white;
     text-align: center;
-    padding: 0% 8% 10%;
-    max-width: 100%;    
+    padding: 8% 8% 10%;
+    max-width: 100% ;   
 }
 
 #earth {
@@ -232,7 +232,8 @@ h2 {
  */
 #menu {
   position: absolute;
-  width: 100%;
+  width: 160px;
+  height: auto;
   margin: -58px 0 0 -20px;
   padding: 20px;
   padding-top: 60px;
@@ -294,4 +295,7 @@ a:hover {
 .planetImg {
     max-width: 100%;
     text-align: center;
+}
+.modal {
+    color: black;
 }

@@ -4,13 +4,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+       <!-- jQuery Modal for popup boxes-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
 <html>
   <body>
     <!-- <div id="toolbar"> small minimal menu which sticks as you scroll down
          Made by Erik Terwan    -->
-<!--   24th of November 2015   -->   
-      
+<!--   24th of November 2015   -->
+
 <nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox">
@@ -23,7 +27,7 @@
       <li><a href="#mission">the mission</a></li>
       <li><a href="#spacecraft">spacecraft</a></li>
       <li><a href="#jupiter">jupiter</a></li>
-      <li><a href="jupiter/jupiter.html" target="_blank">jupiter gallery</a></li>
+      <li><a href="gallery/jupitergallery.html" target="_blank">jupiter gallery</a></li>
     </ul>
   </div>
 </nav>
@@ -38,7 +42,7 @@
       <section id="earth">
       <img src="images/earth2.png" class="planetImg" >
       </section>
-    
+
       <section id="start">
         <h1>Juno - mission to Jupiter</h1>
           <p><b>Unlocking Jupiter's Secrets</b><br><br>
@@ -48,27 +52,45 @@ Juno will improve our understanding of the solar system's beginnings<br> by reve
       </section>
       <section id="people">
            <h1>Heroes standing behind the mission's success</h1>
-          
+
         <div class="container marketing">
         <!-- Three columns of text below the carousel -->
           <div class="row">
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut.png" width="60%">
               <h2>SCOTT BOLTON</h2>
-              <p>Principal Investigator (PI), responsible for overall success of NASA mission and leader of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <p>SOUTHWEST RESEARCH INSTITUTE (SWRI)</p>
+              <!--popupboxes start here-->
+              <div id="ex1" class="modal">
+                <p>JUNO ROLE<br>Principal Investigator (PI), responsible for overall success of NASA mission and leader of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" class="btn btn-default" rel="modal:open" role="button">Bio &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut.png" width="60%">
               <h2>FRAN BAGENAL</h2>
-              <p>Chairs magnetospheres working group, analyzes fields and particles data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <p>UNIVERSITY OF COLORADO, BOULDER</p>
+              <!--popupboxes start here-->
+              <div id="ex2" class="modal">
+                <p>JUNO ROLE: SPACE PHYSICS.<br>Chairs magnetospheres working group, analyzes fields and particles data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex2" class="btn btn-default" rel="modal:open" role="button">Bio &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut.png" width="60%">
               <h2>SUSHIL ATREYA</h2>
-              <p>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the geometry of observations. Performs reduction and analysis of data to determine the distribution of water and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to provide meteorological context for composition. Assists the science team on the interpretation of data with the goal of understanding the formation of Jupiter and the origin and evolution of its atmosphere.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <p>DEPARTMENT OF ATMOSPHERIC, OCEANIC, AND SPACE SCIENCES, UNIVERSITY OF MICHIGAN</p>
+              <!--popupboxes start here-->
+              <div id="ex3" class="modal">
+                <p>JUNO ROLE<br>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the geometry of observations. Performs reduction and analysis of data to determine the distribution of water and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to provide meteorological context for composition. Assists the science team on the interpretation of data with the goal of understanding the formation of Jupiter and the origin and evolution of its atmosphere.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex3" class="btn btn-default" rel="modal:open" role="button">Bio &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
           </div>
         </div>
@@ -87,7 +109,7 @@ Juno will let us take a giant step forward in our understanding of how giant pla
                 <img src="images/juno.png" class="planetImg" width="600px">
           </div>
         </section>
-        <section id="spacecraft">           
+        <section id="spacecraft">
               <h2>Juno's Mythical Connection</h2>
               <p class="lead">In Greek and Roman mythology, Jupiter drew a veil of clouds around himself to hide his mischief. It was Jupiter's wife, the goddess Juno, who was able to peer through the clouds and reveal Jupiter's true nature. The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of misbehavior, but helping us to understand the planet's structure and history.</p>
              <img src="images/wife.png" class="planetImg" >
