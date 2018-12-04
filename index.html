@@ -3,12 +3,16 @@
     <title>Juno</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal for popup boxes-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
 <html>
   <body>
     <!-- <div id="toolbar"> small minimal menu which sticks as you scroll down
          Made by Erik Terwan    -->
-<!--   24th of November 2015   -->      
+<!--   24th of November 2015   -->
 <nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox">
@@ -21,7 +25,7 @@
       <li><a href="#the mission">the mission</a></li>
       <li><a href="#spacecraft">spacecraft</a></li>
       <li><a href="#jupiter">jupiter</a></li>
-      <li><a href="jupiter/jupiter.html" target="_blank">jupiter gallery</a></li>
+      <li><a href="gallery/jupitergallery.html" target="_blank">jupiter gallery</a></li>
     </ul>
   </div>
 </nav>
@@ -36,7 +40,7 @@
     </div>
       <section id="start">
         <h1>Juno is the best - scroll and click for magic!</h1>
-          <p> 
+          <p>
             This is where we gonna have a lot of cool facts about Juno and how the missiion started. It will be the best
           </p>
       </section>
@@ -48,19 +52,41 @@
               <img class="img-circle" src="images/astronaut1.png" width="60%">
               <h2>SCOTT BOLTON</h2>
               <p>Principal Investigator (PI), responsible for overall success of NASA mission and leader of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <!--popupboxes start here-->
+              <div id="ex1" class="modal">
+                <p>Dr. Scott Bolton has 24 years experience at Jet Propulsion Laboratory (JPL), spanning a wide spectrum of management, engineering and scientific positions for planetary missions including Cassini, Galileo, DS-1, Voyager, Magellan, Quasat, Solar Probe, and CRAF. His extensive experience managing multiple science investigations on both Cassini and Galileo provides an excellent background and skill set for his role as the Juno PI.<br><br>His experience at JPL spans mission design, instrument design and delivery, mission development, science planning, and science operations.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" class="btn btn-default" rel="modal:open" role="button">Other Experience &raquo;</a></p>
+
             </div><!-- /.col-lg-4 -->
+
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut2.png" width="60%">
               <h2>FRAN BAGENAL</h2>
               <p>Chairs magnetospheres working group, analyzes fields and particles data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <!--popupboxes start here-->
+              <div id="ex2" class="modal">
+                <p>Fran Bagenal is editor of “Jupiter: The Planet, Satellite and Magnetosphere,” which summarizes the post-Galileo science of the Jovian system. Her research has focused on the Io plasma torus and the magnetosphere of Jupiter. She has participated in the Voyager mission, was an Interdisciplinary Scientist on Galileo and is collaborating with the Cassini UVIS team on analysis of data obtained at the Jupiter flyby. <br> <br> Bagenal is team leader of the plasma investigation on the New Horizons mission to Pluto. She is a Co-Investigator on the Jupiter Magnetospheric Explorer mission (under Phase A study).</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex2" class="btn btn-default" rel="modal:open" role="button">Other Experience &raquo;</a></p>
+
             </div><!-- /.col-lg-4 -->
+
             <div class="col-lg-4">
               <img class="img-circle" src="images/astronaut3.png" width="60%">
               <h2>SUSHIL ATREYA</h2>
               <p>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the geometry of observations. Performs reduction and analysis of data to determine the distribution of water and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to provide meteorological context for composition. Assists the science team on the interpretation of data with the goal of understanding the formation of Jupiter and the origin and evolution of its atmosphere.</p>
-              <p><a class="btn btn-default" href="#" role="button">Other Experience &raquo;</a></p>
+              <!--popupboxes start here-->
+              <div id="ex3" class="modal">
+                <p>For nearly three decades, Sushil Atreya has been actively engaged in planetary science research. Most of his research has been on the physical and chemical processes, cloud physics, thermo-chemistry, and the origin and evolution of the atmospheres of the giant planets and Titan. He has also studied the other planets, particularly Mars, using the methodology, tools, and the coupled thermochemistry-photochemistry-radiative transfer models he developed for the giant planetary systems.<br><br> Sushil Atreya has published 140 refereed research articles, written ten chapters in various publications and is the author of a graduate level textbook detailing the atmospheres and ionospheres of the giant planets. He is also editor of a book on the origin and evolution of planetary atmospheres.<br><br> Since 1974, Sushil Atreya has worked at the University of Michigan, Ann Arbor, where he is presently Professor of Atmospheric and Space Science. He has held visiting professorships at the University of Paris, France, in 1984-1985, 2000, and 2001.<br><br> Sushil Atreya is currently participating as Co-Investigator and member of the science and experiment team on the Cassini-Huygens (GeMS and ACP) and the Mars Express (PFS) missions. Previously he was a Co-Investigor on the Galileo Probe Mass Spectrometer, Voyager 1 and 2 UV Spectrometers, and the Phobos (at Mars) Spectro-photometer Investigations.<br><br> Atreya has participated frequently in planetary observations from the Earth, particularly those with the HST, CFHT, VLT, and ISO.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex3" class="btn btn-default" rel="modal:open" role="button">Other Experience &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
           </div>
         </div><!-- /.row -->

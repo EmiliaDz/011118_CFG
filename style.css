@@ -28,7 +28,7 @@ h2 {
     max-width: 100%;
 }
 
-/* 
+/*
 #toolbar {
     text-align: center;
     background-color: #1d0c08;
@@ -109,9 +109,9 @@ h2 {
   position: relative;
   border-radius: 3px;
   z-index: 9;
-  
+
   transform-origin: 5.3px 0px;
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -127,7 +127,7 @@ h2 {
   transform-origin: 0% 100%;
 }
 
-/* 
+/*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
@@ -165,16 +165,16 @@ h2 {
   padding-top: 60px;
   padding-left: 20px;
   text-align: left;
-  
+
   background: #625871;
   opacity: 0.4;
   list-style: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -197,7 +197,7 @@ a {
     opacity: 1.0;
     transition: color 0.3s ease;
 }
-  
+
 a:hover {
     color: #A62455;
     text-decoration: none;
@@ -219,4 +219,8 @@ a:hover {
 .planetImg {
     max-width: 100%;
     text-align: center;
+}
+
+.modal {
+  color: black;
 }
