@@ -18,44 +18,29 @@ body {
 }
 
 #start {
-   height: 450px;    
-   margin: 40px;        
+   height: 450px;      
    }
 
 #start h1 {
     font-size: 50px;
     color: #A62455; 
 }
-
 #start p {
     font-size: 30px;
 }
-
-
 #people h1 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
-
 #mission h2 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
-
-#mission img {
-    margin: 50px;    
-}
-
+   
 #spacecraft h2 {
     font-size: 50px;
     margin: 50px;
     color: #A62455; 
-}
-
-#spacecraft img {
-    margin:50px;
 }
 
 #jupiter{ 
