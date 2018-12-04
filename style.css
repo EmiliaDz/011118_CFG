@@ -39,7 +39,6 @@ body {
    
 #spacecraft h2 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
 
@@ -49,7 +48,6 @@ body {
 
 #jupiter h2 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
 
@@ -58,12 +56,10 @@ h1 {
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    margin: 20px;
 }
 p {
     text-align: center;
     font-family: 'Barlow', sans-serif;
-    margin: 20px;
     font-size: 20px;
 }
 
@@ -72,13 +68,11 @@ h2 {
     color: white;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    margin: 20px;
 }
 
 .lead {
        text-align: center;
     font-family: 'Barlow', sans-serif;
-    margin: 20px; 
     font-size: 20px;
 }
 
