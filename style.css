@@ -9,45 +9,45 @@ body {
     color: white;
     text-align: center;
     padding: 0% 8% 10%;
-    max-width: 100% ;   
+    max-width: 100% ;
 }
 
 
 h1 {
     font-size: 50px;
-    color: #A62455; 
+    color: #A62455;
 }
 p {
     font-size: 30px;
 }
 #people h1 {
     font-size: 50px;
-    color: #A62455; 
+    color: #A62455;
 }
 #mission h2 {
     font-size: 50px;
-    color: #A62455; 
-}
-   
-#spacecraft h2 {
-    font-size: 50px;
-    color: #A62455; 
+    color: #A62455;
 }
 
-#jupiter{ 
+#spacecraft h2 {
+    font-size: 50px;
+    color: #A62455;
+}
+
+#jupiter{
     margin-bottom: 100px;
 }
 
 #jupiter h2 {
     font-size: 50px;
-    color: #A62455; 
+    color: #A62455;
 }
 
 #timeline img {
     width: 70%;
 }
 
-h1 { 
+h1 {
     margin-top: 80px;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -76,7 +76,7 @@ h2 {
     max-width: 100%;
 }
 
-/* 
+/*
 #toolbar {
     text-align: center;
     background-color: #1d0c08;
@@ -157,9 +157,9 @@ h2 {
   position: relative;
   border-radius: 3px;
   z-index: 9;
-  
+
   transform-origin: 5.3px 0px;
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -175,7 +175,7 @@ h2 {
   transform-origin: 0% 100%;
 }
 
-/* 
+/*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
@@ -214,16 +214,16 @@ h2 {
   padding-top: 60px;
   padding-left: 20px;
   text-align: left;
-  
+
   background: #625871;
   opacity: 0.4;
   list-style: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -246,9 +246,9 @@ a {
     opacity: 1.0;
     transition: color 0.3s ease;
     font-family: 'Barlow', sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
 }
-  
+
 a:hover {
     color: #A62455;
     text-decoration: none;
@@ -293,4 +293,9 @@ color: white
 .btn-pinterest {
     background: #A62455;
     border-color: #A62455;
+}
+
+.modal a.close-modal {
+  height: 0px;
+  width: 0px;
 }
