@@ -12,15 +12,12 @@ body {
     max-width: 100% ;   
 }
 
-#start {
-   height: 450px;      
-   }
 
-#start h1 {
+h1 {
     font-size: 50px;
     color: #A62455; 
 }
-#start p {
+p {
     font-size: 30px;
 }
 #people h1 {
