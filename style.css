@@ -12,11 +12,6 @@ body {
     max-width: 100% ;   
 }
 
-#earth {
-    margin-top: 0;
-    margin-bottom: 150px;
-}
-
 #start {
    height: 450px;      
    }
@@ -274,6 +269,7 @@ a:hover {
 .planetImg {
     max-width: 100%;
     text-align: center;
+    margin-top: 0;
 }
 .modal {
     color: black;
