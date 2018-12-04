@@ -53,6 +53,10 @@ body {
     color: #A62455; 
 }
 
+#timeline img {
+    width: 70%;
+}
+
 h1 { 
     margin-top: 80px;
     text-align: center;
