@@ -12,11 +12,6 @@ body {
     max-width: 100% ;   
 }
 
-#earth {
-    margin-top: 0;
-    margin-bottom: 150px;
-}
-
 #start {
    height: 450px;      
    }
@@ -39,7 +34,6 @@ body {
    
 #spacecraft h2 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
 
@@ -49,7 +43,6 @@ body {
 
 #jupiter h2 {
     font-size: 50px;
-    margin: 50px;
     color: #A62455; 
 }
 
@@ -62,12 +55,10 @@ h1 {
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    margin: 20px;
 }
 p {
     text-align: center;
     font-family: 'Barlow', sans-serif;
-    margin: 20px;
     font-size: 20px;
 }
 
@@ -76,13 +67,11 @@ h2 {
     color: white;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    margin: 20px;
 }
 
 .lead {
        text-align: center;
     font-family: 'Barlow', sans-serif;
-    margin: 20px; 
     font-size: 20px;
 }
 
@@ -284,6 +273,7 @@ a:hover {
 .planetImg {
     max-width: 100%;
     text-align: center;
+    margin-top: 0;
 }
 .modal {
     color: black;
