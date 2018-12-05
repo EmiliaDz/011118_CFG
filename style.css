@@ -32,6 +32,10 @@ h2 {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
 }
+section {
+    min-height: 100%;
+    max-height: 100%;
+}
 
 .lead {
     text-align: center;
@@ -299,16 +303,16 @@ color: white
     }
 }
 
-div .img-circle {
+.img-circle {
     width: 100%;
     margin: 0;
     border-radius: 50%;
     
     background-repeat: no-repeat;
-    background-image:   linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
-                        linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
+    background-image:   linear-gradient(to right, #A62455 100%, #A62455 100%),
+                        linear-gradient(to bottom, #A62455 100%, #A62455 100%),
+                        linear-gradient(to right, #A62455 100%, #A62455 100%),
+                        linear-gradient(to bottom, #A62455 100%, #A62455 100%);
     background-size:    100% 3px,
                         3px 100%,
                         100% 3px,
