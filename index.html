@@ -9,7 +9,18 @@
   <!-- jQuery Modal for popup boxes-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">        
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+  </script>
+    
 </head>
 
 <html lang="en">
@@ -47,6 +58,25 @@
     </div>
   </section>
   <!-- START -->
+    
+     <h1>Juno in numbers</h1>
+       
+    <!-- <span><span class="counter circle">12345</span></span> -->
+    <div>        
+        <div id="count-2 num-info" style="display: inline-block; width: 25%;">
+        <h1 class="counter">32</h1>
+        <h2>times the spacecraft will orbit Jupiter</h2>    
+        </div>
+        <div id="count-2 num-info" style="display: inline-block; width: 25%;">
+        <h1 class="counter">5,000</h1>
+        <h2>skimming above the planet's cloud tops</h2>    
+        </div>
+        <div id="count-2 num-info" style="display: inline-block; width: 25%;">
+        <h1 class="counter">365</h1>
+        <h2>days of Juno's trip around Jupiter</h2> 
+        </div>      
+      </div>
+    
   <!-- ABOUT -->
   <section id="about">
     <div class="sectionTxt">
@@ -123,7 +153,7 @@
   <!-- PEOPLE -->
   <!-- MISSION -->
   <section id="mission">
-    <div class="sectionTxt"></div>
+    <div class="sectionTxt">
     <h1>Mission Milestones</h1>
     <p class="lead">NASA has approved an update to Juno’s science operations until July 2021. This provides for an
       additional 41 months in orbit around Jupiter and will enable Juno to achieve its primary science objectives. Juno
@@ -145,14 +175,14 @@
       The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of
       misbehavior, but helping us to understand the planet's structure and history.</p>
     </div>
-    <div class="mainImg"></div>
+    <div class="mainImg">
     <img src="images/wife.png" class="planetImg">
     </div>
   </section>
   <!-- SPACECRAFT -->
   <!-- JUPITER -->
   <section id="jupiter">
-    <div class="sectionTxt"></div>
+    <div class="sectionTxt">
     <h1>Jupiter's Origins and Interior</h1>
     <p>T. Pyle (SSC) Theories about solar system formation all begin with the collapse of a giant cloud of
       gas and dust, or nebula, most of which formed the infant sun. Like the sun, Jupiter is mostly hydrogen and
@@ -177,6 +207,11 @@
     </div>
   </section>
   <!-- JUPITER -->
+
+<script src="js/jquery.counterup.min.js"></script>  
+      <script src="js/main.js"></script>  
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
 </body>
 <footer>
   <div>
