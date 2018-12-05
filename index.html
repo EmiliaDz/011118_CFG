@@ -1,157 +1,207 @@
 <!DOCTYPE html>
-  <head>
-    <title>Juno</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- jQuery Modal for popup boxes-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <title>Juno</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal for popup boxes-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <html>
-  <body>
-    <!-- <div id="toolbar"> small minimal menu which sticks as you scroll down
-         Made by Erik Terwan    -->
-<!--   24th of November 2015   -->
 
-<nav role="navigation">
-  <div id="menuToggle">
-    <input type="checkbox">
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <li><a href="#earth">start</a></li>
-      <li><a href="#people">people</a></li>
-      <li><a href="#mission">the mission</a></li>
-      <li><a href="#spacecraft">spacecraft</a></li>
-      <li><a href="#jupiter">jupiter</a></li>
-      <li><a href="gallery/jupitergallery.html" target="_blank">jupiter gallery</a></li>
-    </ul>
-  </div>
-</nav>
-      <!-- <ul>
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
         <li><a href="#start">start</a></li>
+        <li><a href="#about">about</a></li>
         <li><a href="#people">people</a></li>
-        <li><a href="#the mission">the mission</a></li>
+        <li><a href="#mission">the mission</a></li>
         <li><a href="#spacecraft">spacecraft</a></li>
         <li><a href="#jupiter">jupiter</a></li>
-        <li><a href="jupiter/jupiter.html" target="_blank">jupiter gallery</a></li>
-      </ul> -->
-    <section class="mainImg">
+        <li><a href="gallery/jupitergallery.html" target="_blank">jupiter gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVIGATION BAR -->
+  <!-- START -->
+  <section id="start">
+    <div class="mainImg">
       <img src="images/earth2.png" class="planetImg">
-    </section>
-
-    <section class="sectionTxt">
-        <h1>Juno - mission to Jupiter</h1>
-        <p><b>Unlocking Jupiter's Secrets</b><br><br>Juno will improve our understanding of the solar system's beginnings<br> by revealing the origin and evolution of Jupiter.
-        </p>
-    </section>
-    <section class="sectionTxt">
-           <h1>Heroes standing behind the mission's success</h1>
-        <div class="container marketing">
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="img-circle" src="images/astronaut.png" width="60%">
-              <h2>SCOTT BOLTON</h2>
-              <p>SOUTHWEST RESEARCH INSTITUTE (SWRI)</p>
-              <!--popupboxes start here-->
-              <div id="ex1" class="modal">
-                <p>JUNO ROLE<br><br>Principal Investigator (PI), responsible for overall success of NASA mission and leader of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
-                <a href="#" rel="modal:close">Close</a>
-              </div>
-              <!-- Link to open the modal -->
-              <p><a href="#ex1" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="img-circle" src="images/astronaut.png" width="60%">
-              <h2>FRAN BAGENAL</h2>
-              <p>UNIVERSITY OF COLORADO,<br> BOULDER</p>
-              <!--popupboxes start here-->
-              <div id="ex2" class="modal">
-                <p>JUNO ROLE: SPACE PHYSICS.<br><br>Chairs magnetospheres working group, analyzes fields and particles data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
-                <a href="#" rel="modal:close">Close</a>
-              </div>
-              <!-- Link to open the modal -->
-              <p><a href="#ex2" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="img-circle" src="images/astronaut.png" width="60%">
-              <h2>SUSHIL ATREYA</h2>
-              <p>DEPARTMENT OF SPACE SCIENCES, UNIVERSITY OF MICHIGAN</p>
-              <!--popupboxes start here-->
-              <div id="ex3" class="modal">
-                <p>JUNO ROLE<br><br>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the geometry of observations. Performs reduction and analysis of data to determine the distribution of water and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to provide meteorological context for composition. Assists the science team on the interpretation of data with the goal of understanding the formation of Jupiter and the origin and evolution of its atmosphere.</p>
-                <a href="#" rel="modal:close">Close</a>
-              </div>
-              <!-- Link to open the modal -->
-              <p><a href="#ex3" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
+    </div>
+    <div class="sectionTxt">
+      <h1>Juno - mission to Jupiter</h1>
+      <p><b>Unlocking Jupiter's Secrets</b><br><br>Juno will improve our understanding of the solar system's beginnings<br>
+        by revealing the origin and evolution of Jupiter.
+      </p>
+    </div>
+  </section>
+  <!-- START -->
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sectionTxt">
+      <h1>The Giant Planet Story is the Story of the Solar System</h1>
+      <p>Juno's principal goal is to understand the origin and evolution of Jupiter. Underneath its dense cloud cover,
+        Jupiter safeguards secrets to the fundamental processes and conditions that governed our solar system during
+        its formation. As our primary example of a giant planet, Jupiter can also provide critical knowledge for
+        understanding the planetary systems being discovered around other stars.<br><br>With its suite of science
+        instruments, Juno will investigate the existence of a solid planetary core, map Jupiter's intense magnetic
+        field, measure the amount of water and ammonia in the deep atmosphere, and observe the planet's auroras.<br><br>Juno
+        will let us take a giant step forward in our understanding of how giant planets form and the role these titans
+        played in putting together the rest of the solar system.</p>
+    </div>
+  </section>
+  <section class="mainImg">
+    <img src="images/juno.png" class="planetImg">
+  </section>
+  <!-- ABOUT -->
+  <!-- PEOPLE -->
+  <section id="people">
+    <div class="sectionTxt">
+      <h1>Heroes standing behind the mission's success</h1>
+    </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <h2>SCOTT BOLTON</h2>
+          <p>SOUTHWEST RESEARCH INSTITUTE (SWRI)</p>
+          <!--popupboxes start here-->
+          <div id="ex1" class="modal">
+            <p>JUNO ROLE<br><br>Principal Investigator (PI), responsible for overall success of NASA mission and leader
+              of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s
+              atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave
+              observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
+            <a href="#" rel="modal:close">Close</a>
           </div>
-        </div>
-      </section><!-- /.row -->
+          <!-- Link to open the modal -->
+          <p><a href="#ex1" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <h2>FRAN BAGENAL</h2>
+          <p>UNIVERSITY OF COLORADO,<br> BOULDER</p>
+          <!--popupboxes start here-->
+          <div id="ex2" class="modal">
+            <p>JUNO ROLE: SPACE PHYSICS.<br><br>Chairs magnetospheres working group, analyzes fields and particles
+              data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <!-- Link to open the modal -->
+          <p><a href="#ex2" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <h2>SUSHIL ATREYA</h2>
+          <p>DEPARTMENT OF SPACE SCIENCES, UNIVERSITY OF MICHIGAN</p>
+          <!--popupboxes start here-->
+          <div id="ex3" class="modal">
+            <p>JUNO ROLE<br><br>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave
+              Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the
+              geometry of observations. Performs reduction and analysis of data to determine the distribution of water
+              and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to
+              provide meteorological context for composition. Assists the science team on the interpretation of data
+              with the goal of understanding the formation of Jupiter and the origin and evolution of its atmosphere.</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+          <!-- Link to open the modal -->
+          <p><a href="#ex3" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+  </section><!-- /.row -->
+  <!-- PEOPLE -->
+  <!-- MISSION -->
+  <section id="mission">
+    <div class="sectionTxt"></div>
+    <h1>Mission Milestones</h1>
+    <p class="lead">NASA has approved an update to Juno’s science operations until July 2021. This provides for an
+      additional 41 months in orbit around Jupiter and will enable Juno to achieve its primary science objectives. Juno
+      is in 53-day orbits rather than 14-day orbits as initially planned because of a concern about valves on the
+      spacecraft’s fuel system. This longer orbit means that it will take more time to collect the needed science data.
+    </p>
+    </div>
+    <div class="mainImg">
+      <img src="images/timeline.png" class="planetImg">
+    </div>
+  </section>
+  <!-- MISSION -->
+  <!-- SPACECRAFT -->
+  <section id="spacecraft">
+    <div class="sectionTxt"></div>
+    <h2>Juno's Mythical Connection</h2>
+    <p class="lead">In Greek and Roman mythology, Jupiter drew a veil of clouds around himself to hide his mischief. It
+      was Jupiter's wife, the goddess Juno, who was able to peer through the clouds and reveal Jupiter's true nature.
+      The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of
+      misbehavior, but helping us to understand the planet's structure and history.</p>
+    </div>
+    <div class="mainImg"></div>
+    <img src="images/wife.png" class="planetImg">
+    </div>
+  </section>
+  <!-- SPACECRAFT -->
+  <!-- JUPITER -->
+  <section id="jupiter">
+    <div class="sectionTxt"></div>
+    <h1>Jupiter's Origins and Interior</h1>
+    <p>T. Pyle (SSC) Theories about solar system formation all begin with the collapse of a giant cloud of
+      gas and dust, or nebula, most of which formed the infant sun. Like the sun, Jupiter is mostly hydrogen and
+      helium, so it must have formed early, capturing most of the material left after our star came to be. How this
+      happened, however, is unclear. Did a massive planetary core form first and gravitationally capture all that gas,
+      or did an unstable region collapse inside the nebula, triggering the planet's formation? Differences between
+      these scenarios are profound.<br><br>
 
-        <section id="mission">
-          <div class="row featurette">
-              <h2>The Giant Planet Story is the Story of the Solar System</h2>
-                <p>Juno's principal goal is to understand the origin and evolution of Jupiter. Underneath its dense cloud cover, Jupiter safeguards secrets to the fundamental processes and conditions that governed our solar system during its formation. As our primary example of a giant planet, Jupiter can also provide critical knowledge for understanding the planetary systems being discovered around other stars.<br><br>With its suite of science instruments, Juno will investigate the existence of a solid planetary core, map Jupiter's intense magnetic field, measure the amount of water and ammonia in the deep atmosphere, and observe the planet's auroras.<br><br>Juno will let us take a giant step forward in our understanding of how giant planets form and the role these titans played in putting together the rest of the solar system.</p>
-            </div>
-        </section>
-        <section class="mainImg">
-                <img src="images/juno.png" class="planetImg">
-        </section>
+      Even more importantly, the composition and role of icy planetesimals, or small proto-planets, in planetary
+      formation hangs in the balance – and with them, the origin of Earth and other terrestrial planets. Icy
+      planetesimals likely were the carriers of materials like water and carbon compounds that are the fundamental
+      building blocks of life.<br><br>
 
-       <section id="timeline">
-              <h2>Mission Milestones</h2>
-              <p class="lead">NASA has approved an update to Juno’s science operations until July 2021. This provides for an additional 41 months in orbit around Jupiter and will enable Juno to achieve its primary science objectives.  Juno is in 53-day orbits rather than 14-day orbits as initially planned because of a concern about valves on the spacecraft’s fuel system. This longer orbit means that it will take more time to collect the needed science data. </p>
-        </section>
-        <section class="mainImg">
-          <img src="images/timeline.png" class="planetImg">
-        </section>
-        <section id="spacecraft">
-              <h2>Juno's Mythical Connection</h2>
-              <p class="lead">In Greek and Roman mythology, Jupiter drew a veil of clouds around himself to hide his mischief. It was Jupiter's wife, the goddess Juno, who was able to peer through the clouds and reveal Jupiter's true nature. The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of misbehavior, but helping us to understand the planet's structure and history.</p>
-             <img src="images/wife.png" class="planetImg" >
-        </section>
-
-        <section id="jupiter">
-              <h2 class="featurette-heading">Jupiter's Origins and Interior</h2>
-              <p class="lead">T. Pyle (SSC) Theories about solar system formation all begin with the collapse of a giant cloud of gas and dust, or nebula, most of which formed the infant sun. Like the sun, Jupiter is mostly hydrogen and helium, so it must have formed early, capturing most of the material left after our star came to be. How this happened, however, is unclear. Did a massive planetary core form first and gravitationally capture all that gas, or did an unstable region collapse inside the nebula, triggering the planet's formation? Differences between these scenarios are profound.<br><br>
-
-Even more importantly, the composition and role of icy planetesimals, or small proto-planets, in planetary formation hangs in the balance – and with them, the origin of Earth and other terrestrial planets. Icy planetesimals likely were the carriers of materials like water and carbon compounds that are the fundamental building blocks of life.<br><br>
-
-Unlike Earth, Jupiter's giant mass allowed it to hold onto its original composition, providing us with a way of tracing our solar system's history. Juno will measure the amount of water and ammonia in Jupiter's atmosphere and determine if the planet actually has a solid core, directly resolving the origin of this giant planet and thereby the solar system. By mapping Jupiter's gravitational and magnetic fields, Juno will reveal the planet's interior structure and measure the mass of the core.</p>
-        </section>
-
-      <!-- /END THE FEATURETTES -->
-
-
-   <!--/.containermarketing-->
-
-
-  </body>
-  <footer>
-    <div>
+      Unlike Earth, Jupiter's giant mass allowed it to hold onto its original composition, providing us with a way of
+      tracing our solar system's history. Juno will measure the amount of water and ammonia in Jupiter's atmosphere and
+      determine if the planet actually has a solid core, directly resolving the origin of this giant planet and thereby
+      the solar system. By mapping Jupiter's gravitational and magnetic fields, Juno will reveal the planet's interior
+      structure and measure the mass of the core.</p>
+    </div>
+    <div class="mainImg">
       <img src="images/jupiter.png" class="planetImg">
-        <h2>Want to know more?</h2>
-        <p class="lead">The NASA Communications Office receives thousands of communications each week from all over the world and they endeavor to provide timely information and answers to questions. However, we encourage you to use the <a href="https://www.nasa.gov/">NASA Web site</a> for finding the information you are seeking or the answers to your questions before submitting a request for information. We also invite you to consider visiting one or more of the following social accounts for receiving NASA Updates on the exciting work NASA is doing..</p>
-            <div id='social-buttons'>
-                <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=NASAJuno">
-                    <button class='btn btn-lg btn-twitter'>Twitter</button></a>
-                 <a href="https://www.facebook.com/NASAJuno">
-                     <button class='btn btn-lg btn-facebook'>Facebook</button></a>
-                <a href="https://www.instagram.com/nasajuno/">
-                    <button class='btn btn-lg btn-pinterest'>Instagram</button></a>
-                <h2>If you are not able to locate the information you are seeking on, you may write to NASA at:</h2>
-                <p class="lead">NASA Headquarters<br>
-300 E. Street SW, Suite 5R30<br>
-Washington, DC 20546<br>
-(202) 358-0001 (Office)<br>
-(202) 358-4338 (Fax)<br>
-                    or you can submit a question to <a href="https://www.nasa.gov/content/submit-a-question-for-nasa">Contact NASA.</a></p>
     </div>
+  </section>
+  <!-- JUPITER -->
+</body>
+<footer>
+  <div>
+    <h2>Want to know more?</h2>
+    <p class="lead">The NASA Communications Office receives thousands of communications each week from all over the
+      world and they endeavor to provide timely information and answers to questions. However, we encourage you to use
+      the <a href="https://www.nasa.gov/">NASA Web site</a> for finding the information you are seeking or the answers
+      to your questions before submitting a request for information. We also invite you to consider visiting one or
+      more of the following social accounts for receiving NASA Updates on the exciting work NASA is doing..</p>
+    <div id='social-buttons'>
+      <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=NASAJuno">
+        <button class='btn btn-lg btn-twitter'>Twitter</button></a>
+      <a href="https://www.facebook.com/NASAJuno">
+        <button class='btn btn-lg btn-facebook'>Facebook</button></a>
+      <a href="https://www.instagram.com/nasajuno/">
+        <button class='btn btn-lg btn-pinterest'>Instagram</button></a>
+      <h2>If you are not able to locate the information you are seeking on, you may write to NASA at:</h2>
+      <p class="lead">NASA Headquarters<br>
+        300 E. Street SW, Suite 5R30<br>
+        Washington, DC 20546<br>
+        (202) 358-0001 (Office)<br>
+        (202) 358-4338 (Fax)<br>
+        or you can submit a question to <a href="https://www.nasa.gov/content/submit-a-question-for-nasa">Contact NASA.</a></p>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </html>
