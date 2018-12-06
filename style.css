@@ -1,6 +1,6 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 body {
     text-decoration: none;
     background: linear-gradient(#23183d, #481c2b, #1d0c08);
@@ -227,13 +227,6 @@ a:hover {
     text-decoration: none;
 }
 
-.junotravelling {
-    text-align: center;
-    position: fixed;
-    z-index: 89;
-    top: 40%;
-}
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
@@ -330,4 +323,17 @@ color: white
 
 .img-circle:hover {
     animation-play-state: running;
+}
+/* JUNO ROTATE */
+
+
+.juno {
+
+    max-width: 80%;
+}
+.juno:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg);
 }

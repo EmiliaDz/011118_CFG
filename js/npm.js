@@ -11,3 +11,9 @@ require('../../js/popover.js')
 require('../../js/scrollspy.js')
 require('../../js/tab.js')
 require('../../js/affix.js')
+
+var juno = document.getElementById("leftgear"),
+    
+window.addEventListener("scroll", function() {
+    juno.style.transform = "rotate("+window.pageYOffset+"deg)";
+});
