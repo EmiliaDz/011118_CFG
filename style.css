@@ -22,6 +22,7 @@ h1 {
     font-weight: bold;
     font-size: 50px;
     color: #A62455;
+    padding: 1% 0 1% 0;
 }
 
 p {
@@ -46,8 +47,9 @@ section {
     font-size: 20px;
 }
 
-.container marketing {
+.marketing {
     max-width: 100%;
+    padding-top: 10%;
 }
 /*
 #toolbar {
@@ -232,11 +234,19 @@ a:hover {
     margin-top: 120px;
   }
 }
+img {
+    max-width: 80%;
+}
+
+.timeline {
+    margin-top: 4%;
+}
 
 .planetImg {
-    max-width: 100%;
     text-align: center;
     margin-top: 0;
+    padding-bottom: 3% 0 3% 0;
+
 }
 .modal {
     color: black;
@@ -328,12 +338,17 @@ color: white
 
 
 .juno {
-
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    -ms-transition: -ms-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out; 
     max-width: 80%;
+    z-index: 100;
 }
 .juno:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg); 
-    -moz-transform: rotate(360deg);
+    transform: rotate(180deg);
+}
+
+section {
+    padding-bottom: 10%
+
 }
