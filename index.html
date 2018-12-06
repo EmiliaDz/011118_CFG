@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Juno</title>
 
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
@@ -12,19 +13,20 @@
   <!-- jQuery Modal for popup boxes-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="style.css">        
+  <link rel="stylesheet" href="style.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    
-    <script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
     });
   </script>
-    
+
 </head>
+
 <body>
   <!-- NAVIGATION BAR -->
   <nav role="navigation">
@@ -60,23 +62,31 @@
   <!-- START -->
   <!-- ABOUT -->
   <section id="about">
-      <h1>Juno in numbers</h1>
-       
-      <!-- <span><span class="counter circle">12345</span></span> -->
-      <div>        
-          <div id="count-2 num-info" style="display: inline-block; width: 25%;">
-          <h1 class="counter">32</h1>
-          <h2>times the spacecraft will orbit Jupiter</h2>    
+    <h1>Juno in numbers</h1>
+
+    <!-- <span><span class="counter circle">12345</span></span> -->
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="count-2 num-info">
+            <h1 class="counter">32</h1>
+            <h2>times the spacecraft will orbit Jupiter</h2>
           </div>
-          <div id="count-2 num-info" style="display: inline-block; width: 25%;">
-          <h1 class="counter">5,000</h1>
-          <h2>skimming above the planet's cloud tops</h2>    
-          </div>
-          <div id="count-2 num-info" style="display: inline-block; width: 25%;">
-          <h1 class="counter">365</h1>
-          <h2>days of Juno's trip around Jupiter</h2> 
-          </div>      
         </div>
+        <div class="col-lg-4">
+          <div id="count-2 num-info">
+            <h1 class="counter">5,000</h1>
+            <h2>skimming above the planet's cloud tops</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div id="count-2 num-info">
+            <h1 class="counter">365</h1>
+            <h2>days of Juno's trip around Jupiter</h2>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="sectionTxt">
       <h1>The Giant Planet Story is the Story of the Solar System</h1>
       <p>Juno's principal goal is to understand the origin and evolution of Jupiter. Underneath its dense cloud cover,
@@ -88,10 +98,10 @@
         will let us take a giant step forward in our understanding of how giant planets form and the role these titans
         played in putting together the rest of the solar system.</p>
     </div>
-</section>
-<section id="gearbox">
+  </section>
+  <section id="gearbox">
     <img class="planetImg juno" src="images/juno.png">
-</section>
+  </section>
   <!-- ABOUT -->
   <!-- PEOPLE -->
   <section id="people">
@@ -152,12 +162,14 @@
   <!-- MISSION -->
   <section id="mission">
     <div class="sectionTxt">
-    <h1>Mission Milestones</h1>
-    <p class="lead">NASA has approved an update to Juno’s science operations until July 2021. This provides for an
-      additional 41 months in orbit around Jupiter and will enable Juno to achieve its primary science objectives. Juno
-      is in 53-day orbits rather than 14-day orbits as initially planned because of a concern about valves on the
-      spacecraft’s fuel system. This longer orbit means that it will take more time to collect the needed science data.
-    </p>
+      <h1>Mission Milestones</h1>
+      <p class="lead">NASA has approved an update to Juno’s science operations until July 2021. This provides for an
+        additional 41 months in orbit around Jupiter and will enable Juno to achieve its primary science objectives.
+        Juno
+        is in 53-day orbits rather than 14-day orbits as initially planned because of a concern about valves on the
+        spacecraft’s fuel system. This longer orbit means that it will take more time to collect the needed science
+        data.
+      </p>
     </div>
     <div class="timeline">
       <img src="images/timeline.png" class="planetImg graphic">
@@ -167,45 +179,50 @@
   <!-- SPACECRAFT -->
   <section id="spacecraft">
     <div class="sectionTxt">
-    <h1>Juno's Mythical Connection</h1>
-    <p class="lead">In Greek and Roman mythology, Jupiter drew a veil of clouds around himself to hide his mischief. It
-      was Jupiter's wife, the goddess Juno, who was able to peer through the clouds and reveal Jupiter's true nature.
-      The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of
-      misbehavior, but helping us to understand the planet's structure and history.</p>
+      <h1>Juno's Mythical Connection</h1>
+      <p class="lead">In Greek and Roman mythology, Jupiter drew a veil of clouds around himself to hide his mischief.
+        It
+        was Jupiter's wife, the goddess Juno, who was able to peer through the clouds and reveal Jupiter's true nature.
+        The Juno spacecraft will also look beneath the clouds to see what the planet is up to, not seeking signs of
+        misbehavior, but helping us to understand the planet's structure and history.</p>
     </div>
     <div class="mainImg">
-    <img src="images/wife.png" class="planetImg">
+      <img src="images/wife.png" class="planetImg">
     </div>
   </section>
   <!-- SPACECRAFT -->
   <!-- JUPITER -->
   <section id="jupiter">
     <div class="sectionTxt">
-    <h1>Jupiter's Origins and Interior</h1>
-    <p>T. Pyle (SSC) Theories about solar system formation all begin with the collapse of a giant cloud of
-      gas and dust, or nebula, most of which formed the infant sun. Like the sun, Jupiter is mostly hydrogen and
-      helium, so it must have formed early, capturing most of the material left after our star came to be. How this
-      happened, however, is unclear. Did a massive planetary core form first and gravitationally capture all that gas,
-      or did an unstable region collapse inside the nebula, triggering the planet's formation? Differences between
-      these scenarios are profound.<br><br>
+      <h1>Jupiter's Origins and Interior</h1>
+      <p>T. Pyle (SSC) Theories about solar system formation all begin with the collapse of a giant cloud of
+        gas and dust, or nebula, most of which formed the infant sun. Like the sun, Jupiter is mostly hydrogen and
+        helium, so it must have formed early, capturing most of the material left after our star came to be. How this
+        happened, however, is unclear. Did a massive planetary core form first and gravitationally capture all that
+        gas,
+        or did an unstable region collapse inside the nebula, triggering the planet's formation? Differences between
+        these scenarios are profound.<br><br>
 
-      Even more importantly, the composition and role of icy planetesimals, or small proto-planets, in planetary
-      formation hangs in the balance – and with them, the origin of Earth and other terrestrial planets. Icy
-      planetesimals likely were the carriers of materials like water and carbon compounds that are the fundamental
-      building blocks of life.<br><br>
+        Even more importantly, the composition and role of icy planetesimals, or small proto-planets, in planetary
+        formation hangs in the balance – and with them, the origin of Earth and other terrestrial planets. Icy
+        planetesimals likely were the carriers of materials like water and carbon compounds that are the fundamental
+        building blocks of life.<br><br>
 
-      Unlike Earth, Jupiter's giant mass allowed it to hold onto its original composition, providing us with a way of
-      tracing our solar system's history. Juno will measure the amount of water and ammonia in Jupiter's atmosphere and
-      determine if the planet actually has a solid core, directly resolving the origin of this giant planet and thereby
-      the solar system. By mapping Jupiter's gravitational and magnetic fields, Juno will reveal the planet's interior
-      structure and measure the mass of the core.</p>
+        Unlike Earth, Jupiter's giant mass allowed it to hold onto its original composition, providing us with a way of
+        tracing our solar system's history. Juno will measure the amount of water and ammonia in Jupiter's atmosphere
+        and
+        determine if the planet actually has a solid core, directly resolving the origin of this giant planet and
+        thereby
+        the solar system. By mapping Jupiter's gravitational and magnetic fields, Juno will reveal the planet's
+        interior
+        structure and measure the mass of the core.</p>
     </div>
   </section>
   <!-- JUPITER -->
 
-<script src="js/jquery.counterup.min.js"></script>  
-      <script src="js/main.js"></script>  
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
 </body>
 <footer>
@@ -233,8 +250,8 @@
     </div>
   </div>
   <div class="mainImg">
-      <img src="images/jupiter.png" class="planetImg">
-    </div>
+    <img src="images/jupiter.png" class="planetImg">
+  </div>
 </footer>
 
 </html>
