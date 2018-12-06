@@ -262,26 +262,30 @@ img {
 color: white
 }
 
+
 .btn-twitter {
  background: #00acee;
  border-color: #009ad5;
+ margin:2%;
 }
 
 .btn-facebook {
     background: #4868ac;
     border-color: #314776;
+    margin:2%;
 }
 
 .btn-pinterest {
     background: #A62455;
     border-color: #A62455;
+    margin:2%;
 }
 
 .modal a.close-modal {
   height: 0px;
   width: 0px;
 }
-/* ANIMATED BORDERS */
+/* ANIMATED BORDERS
 @keyframes bg {
     0% {
         background-size:    0 3px,
@@ -314,7 +318,9 @@ color: white
                             3px 100%;
     }
 }
+*/
 
+/*
 .img-circle {
     width: 100%;
     margin: 0;
@@ -340,6 +346,8 @@ color: white
 .img-circle:hover {
     animation-play-state: running;
 }
+
+*/
 /* JUNO ROTATE */
 
 
@@ -356,5 +364,8 @@ color: white
 
 section {
     padding-bottom: 10%
+}
 
+.counter {
+  margin: 20px;
 }
