@@ -3,10 +3,8 @@
 
 <head>
   <title>Juno</title>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -15,11 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="style.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
   <script>
     jQuery(document).ready(function ($) {
       $('.counter').counterUp({
-        delay: 10,
+        delay: 20,
         time: 1000
       });
     });
@@ -28,6 +25,7 @@
 </head>
 
 <body>
+  <div id="gradient-overlay">    
   <!-- NAVIGATION BAR -->
   <nav role="navigation">
     <div id="menuToggle">
@@ -36,12 +34,13 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li><a href="#start">start</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#start">home</a></li>
+        <li><a href="#about">Juno in numbers</a></li>
         <li><a href="#people">people</a></li>
-        <li><a href="#mission">the mission</a></li>
-        <li><a href="#spacecraft">spacecraft</a></li>
+        <li><a href="#mission">mission milestone</a></li>
+        <li><a href="#spacecraft">mythical connection</a></li>
         <li><a href="#jupiter">jupiter</a></li>
+          <li><a href="#social-buttons">contact</a></li>
         <li><a href="gallery/jupitergallery.html" target="_blank">photo gallery</a></li>
       </ul>
     </div>
@@ -111,12 +110,12 @@
     <div class="container marketing">
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <img class="img-circle" src="images/astronaut1.png" width="60%">
           <h2>SCOTT BOLTON</h2>
           <p>SOUTHWEST RESEARCH INSTITUTE (SWRI)</p>
           <!--popupboxes start here-->
           <div id="ex1" class="modal">
-            <p>JUNO ROLE<br><br>Principal Investigator (PI), responsible for overall success of NASA mission and leader
+            <p>SCOTT BOLTON<br><br>Principal Investigator (PI), responsible for overall success of NASA mission and leader
               of the science team. Analysis and interpretation of microwave radiometry results as applied to Jupiter’s
               atmosphere and radiation belts. Data analysis of plasma, energetic particle, and radio and plasma wave
               observations. Oversees and participates in overall Education/Public Outreach (E/PO) program.</p>
@@ -126,12 +125,12 @@
           <p><a href="#ex1" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <img class="img-circle" src="images/astronaut2.png" width="60%">
           <h2>FRAN BAGENAL</h2>
           <p>UNIVERSITY OF COLORADO,<br> BOULDER</p>
           <!--popupboxes start here-->
           <div id="ex2" class="modal">
-            <p>JUNO ROLE: SPACE PHYSICS.<br><br>Chairs magnetospheres working group, analyzes fields and particles
+            <p>FRAN BAGENAL<br><br>Chairs magnetospheres working group, analyzes fields and particles
               data, auroral images; interdisciplinary role integrating in situ and remote sensing OBS.</p>
             <a href="#" rel="modal:close">Close</a>
           </div>
@@ -139,12 +138,12 @@
           <p><a href="#ex2" class="btn btn-default" rel="modal:open" role="button">Juno Role &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/astronaut.png" width="60%">
+          <img class="img-circle" src="images/astronaut3.png" width="60%">
           <h2>SUSHIL ATREYA</h2>
           <p>DEPARTMENT OF SPACE SCIENCES, UNIVERSITY OF MICHIGAN</p>
           <!--popupboxes start here-->
           <div id="ex3" class="modal">
-            <p>JUNO ROLE<br><br>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave
+            <p>SUSHIL ATREYA<br><br>Plans, designs, and sequences Jupiter water and ammonia observations with the Microwave
               Radiometer (MWR) System. Develops the required thermo-chemical-condensation models appropriate to the
               geometry of observations. Performs reduction and analysis of data to determine the distribution of water
               and ammonia on Jupiter. Combines the MWR results with infrared observations made by JIRAM on Juno to
@@ -223,7 +222,7 @@
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/main.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-
+  </div>
 </body>
 <footer>
   <div>
